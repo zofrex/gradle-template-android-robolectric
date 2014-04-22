@@ -4,17 +4,25 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:0.9.2'
+        classpath 'org.robolectric.gradle:gradle-android-test-plugin:0.9.+'
     }
 }
 
 apply plugin: 'android'
+apply plugin: 'android-test'
 
 repositories {
     mavenCentral()
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots/'
+    }
 }
 
 dependencies {
     compile 'com.android.support:support-v4:19.1.0'
+
+    androidTestCompile 'junit:junit:4.10'
+    androidTestCompile 'org.robolectric:robolectric:2.3-SNAPSHOT'
 }
 
 android {
@@ -23,6 +31,10 @@ android {
 
     defaultConfig {
         minSdkVersion 9
-        targetSdkVersion 19
+        targetSdkVersion 18
+    }
+
+    sourceSets {
+        androidTest.setRoot('src/test')
     }
 }
