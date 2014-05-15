@@ -33,8 +33,4 @@ android {
         minSdkVersion 9
         targetSdkVersion 18
     }
-
-    sourceSets {
-        androidTest.setRoot('src/test')
-    }
 }
