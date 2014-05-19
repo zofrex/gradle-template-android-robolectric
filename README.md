@@ -22,4 +22,4 @@ This is all under the ISC license, which should give you enough freedom to use t
 
 ## Guide
 
-Put your java code in src/main/java, your resources in src/main/res, and your tests in src/test/java.
+Put your java code in src/main/java, your resources in src/main/res, and your tests in src/androidTest/java.
