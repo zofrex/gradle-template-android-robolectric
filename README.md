@@ -4,7 +4,7 @@ A minimal barebones template for starting a new Android application using the ne
 
 ## What
 
-A Gradle-based Android project configured to use the latest versions of the build tools and the bleeding edge version of Robolectric (2.3). The project is configured as a single-project build, using the latest conventions for filesystem layout.
+A Gradle-based Android project configured to use the latest versions of the build tools and the latest version of Robolectric (2.3). The project is configured as a single-project build, using the latest conventions for filesystem layout.
 
 You can write your tests as plain JUnit 4 tests or as Robolectric tests, and you can then run or debug them with the gradle task "test".
 
