@@ -13,16 +13,13 @@ apply plugin: 'android-test'
 
 repositories {
     mavenCentral()
-    maven {
-        url 'https://oss.sonatype.org/content/repositories/snapshots/'
-    }
 }
 
 dependencies {
     compile 'com.android.support:appcompat-v7:19.1.0'
 
     androidTestCompile 'junit:junit:4.10'
-    androidTestCompile 'org.robolectric:robolectric:2.3-SNAPSHOT'
+    androidTestCompile 'org.robolectric:robolectric:2.3'
 }
 
 android {
